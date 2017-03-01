@@ -3,20 +3,23 @@
 	<head>
 		<title>Kevin Richter</title>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8"/>
 
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" charset="utf-8">
+		<link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" charset="utf-8"
+		      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
 		<style>
 			html {
-				background: url("background.jpg") no-repeat 50% 27%;
+				background: url("background.jpg") no-repeat fixed 50% 27%;
 				background-size: cover;
 			}
 
 			body {
 				height: 100vh;
-				background-color: rgba(0,0,0, 0.6);
+				background-color: rgba(0, 0, 0, 0.6);
+				overflow: hidden;
 			}
 
 			.wrapper {
@@ -24,27 +27,76 @@
 				width: 700px;
 
 				position: absolute;
-				top:0;
+				top: 0;
 				bottom: 0;
 				left: 0;
 				right: 0;
 
 				margin: auto;
+				overflow: auto;
 			}
 
 			.card-action, .card-image, .card-image > img {
 				border-radius: 2px !important;
 			}
 
-			.right .card {
-				margin: .5rem 0 1.37rem 0;
+			.card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+				color: #2196F3 !important;
+			}
+
+			/* small size */
+			@media only screen and (max-width: 991px) {
+				.wrapper {
+					height: auto;
+					width: auto;
+				}
+
+				.right .card:last-child {
+					margin-bottom: 0;
+				}
+
+				.left .card {
+					margin-top: .7rem;
+					margin-bottom: .5rem;
+				}
+
+				.row {
+					margin-bottom: .7rem;
+				}
+
+				.card {
+					max-width: 25rem;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.col {
+				}
+			}
+
+			/* medium size */
+			@media only screen and (min-width: 992px) {
+				.right .card {
+					margin: .5rem 0 1.5rem 0 !important;
+				}
+
+				.wrapper {
+					overflow: hidden;
+				}
+			}
+
+			/* large size */
+			@media only screen and (min-width: 1200px) {
+				.right .card {
+					margin: .5rem 0 1.37rem 0 !important;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="row">
-				<div class="col s5">
+				<div class="col s12 m12 l5 left">
 					<div class="card">
 						<div class="card-image">
 							<img src="https://avatars1.githubusercontent.com/u/1887585">
@@ -54,19 +106,21 @@
 							<p>I am a software developer based in The Netherlands.</p>
 						</div>
 						<div class="card-action">
-							<a href="https://docs.google.com/document/d/1PTDTs84OFm88JKpBalVraShU2Hr5bgLTLgCp0jFOoCs/export?format=pdf">Download my resume.</a>
+							<a href="https://docs.google.com/document/d/1PTDTs84OFm88JKpBalVraShU2Hr5bgLTLgCp0jFOoCs/export?format=pdf">
+								Download my resume
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col s7 right">
+				<div class="col s12 m12 l7 right">
 					<div class="card">
 						<div class="card-content">
 							Social media links.
 						</div>
 						<div class="card-action">
-							<a href="https://github.com/beschoenen">GitHub</a>
-							<a href="https://twitter.com/beschoenen">Twitter</a>
-							<a href="http://www.last.fm/user/beschoenen">Last.FM</a>
+							<a target="_blank" href="https://github.com/beschoenen">GitHub</a>
+							<a target="_blank" href="https://twitter.com/beschoenen">Twitter</a>
+							<a target="_blank" href="http://www.last.fm/user/beschoenen">Last.FM</a>
 						</div>
 					</div>
 					<div class="card">
@@ -74,10 +128,10 @@
 							Language Skills.
 						</div>
 						<div class="card-action">
-							<a>PHP</a>
+							<a target="_blank" href="https://secure.php.net">PHP</a>
 							<a>C#</a>
-							<a>Java</a>
-							<a>Python</a>
+							<a target="_blank" href="https://www.java.com">Java</a>
+							<a target="_blank" href="https://www.python.org">Python</a>
 						</div>
 					</div>
 					<div class="card">
@@ -85,16 +139,17 @@
 							And Frameworks like.
 						</div>
 						<div class="card-action">
-							<a href="https://laravel.com">Laravel</a>
-							<a>.Net</a>
-							<a href="http://expressjs.com/">Express</a>
+							<a target="_blank" href="https://laravel.com">Laravel</a>
+							<a target="_blank" href="https://www.microsoft.com/net">.Net</a>
+							<a target="_blank" href="http://expressjs.com">Express</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" charset="utf-8"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8"
+		        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 	</body>
 </html>

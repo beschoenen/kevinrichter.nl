@@ -1,155 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Kevin Richter</title>
+    <head>
+        <title>Kevin Richter</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8"/>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="Kevin,Richter,web,developer,backend,api,swift,C#,Java,Javascript,PHP,Laravel">
+        <meta name="author" content="Kevin Richter">
+        <meta name="description" content="Kevin Richter Dutch Web/Backend Developer">
 
-		<link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" charset="utf-8"
-		      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<style>
-			html {
-				background: url("background.jpg") no-repeat fixed 50% 27%;
-				background-size: cover;
-			}
+        <!-- CSS -->
+        <link rel="stylesheet" charset="utf-8"
+              href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link rel="stylesheet" charset="utf-8"
+              href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+        <link rel="stylesheet" charset="utf-8" href="assets/css/style.css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col s12 m12 l5 left">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://avatars1.githubusercontent.com/u/1887585">
+                            <span class="card-title">Kevin Richter</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a software developer based in The Netherlands.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://docs.google.com/document/d/1PTDTs84OFm88JKpBalVraShU2Hr5bgLTLgCp0jFOoCs/export?format=pdf">
+                                Download my resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l7 right">
+                    <div class="card">
+                        <div class="card-content">
+                            Social media links.
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://github.com/beschoenen">GitHub</a>
+                            <a target="_blank" href="https://twitter.com/beschoenen">Twitter</a>
+                            <a target="_blank" href="http://www.last.fm/user/beschoenen">Last.FM</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            Language Skills.
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://secure.php.net">PHP</a>
+                            <a>C#</a>
+                            <a target="_blank" href="https://www.java.com">Java</a>
+                            <a target="_blank" href="https://www.python.org">Python</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            And Frameworks like.
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://laravel.com">Laravel</a>
+                            <a target="_blank" href="https://www.microsoft.com/net">.Net</a>
+                            <a target="_blank" href="http://expressjs.com">Express</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			body {
-				height: 100vh;
-				background-color: rgba(0, 0, 0, 0.6);
-				overflow: hidden;
-			}
-
-			.wrapper {
-				height: 486px;
-				width: 700px;
-
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-
-				margin: auto;
-				overflow: auto;
-			}
-
-			.card-action, .card-image, .card-image > img {
-				border-radius: 2px !important;
-			}
-
-			.card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-				color: #2196F3 !important;
-			}
-
-			/* small size */
-			@media only screen and (max-width: 991px) {
-				.wrapper {
-					height: auto;
-					width: auto;
-				}
-
-				.right .card:last-child {
-					margin-bottom: 0;
-				}
-
-				.left .card {
-					margin-top: .7rem;
-					margin-bottom: .5rem;
-				}
-
-				.row {
-					margin-bottom: .7rem;
-				}
-
-				.card {
-					max-width: 25rem;
-					margin-left: auto;
-					margin-right: auto;
-				}
-
-				.col {
-				}
-			}
-
-			/* medium size */
-			@media only screen and (min-width: 992px) {
-				.right .card {
-					margin: .5rem 0 1.5rem 0 !important;
-				}
-
-				.wrapper {
-					overflow: hidden;
-				}
-			}
-
-			/* large size */
-			@media only screen and (min-width: 1200px) {
-				.right .card {
-					margin: .5rem 0 1.37rem 0 !important;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="row">
-				<div class="col s12 m12 l5 left">
-					<div class="card">
-						<div class="card-image">
-							<img src="https://avatars1.githubusercontent.com/u/1887585">
-							<span class="card-title">Kevin Richter</span>
-						</div>
-						<div class="card-content">
-							<p>I am a software developer based in The Netherlands.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://docs.google.com/document/d/1PTDTs84OFm88JKpBalVraShU2Hr5bgLTLgCp0jFOoCs/export?format=pdf">
-								Download my resume
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m12 l7 right">
-					<div class="card">
-						<div class="card-content">
-							Social media links.
-						</div>
-						<div class="card-action">
-							<a target="_blank" href="https://github.com/beschoenen">GitHub</a>
-							<a target="_blank" href="https://twitter.com/beschoenen">Twitter</a>
-							<a target="_blank" href="http://www.last.fm/user/beschoenen">Last.FM</a>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							Language Skills.
-						</div>
-						<div class="card-action">
-							<a target="_blank" href="https://secure.php.net">PHP</a>
-							<a>C#</a>
-							<a target="_blank" href="https://www.java.com">Java</a>
-							<a target="_blank" href="https://www.python.org">Python</a>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-content">
-							And Frameworks like.
-						</div>
-						<div class="card-action">
-							<a target="_blank" href="https://laravel.com">Laravel</a>
-							<a target="_blank" href="https://www.microsoft.com/net">.Net</a>
-							<a target="_blank" href="http://expressjs.com">Express</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" charset="utf-8"
-		        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-	</body>
+        <!-- JavaScript -->
+        <script type="text/javascript" charset="utf-8"
+                src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" charset="utf-8"
+                src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    </body>
 </html>

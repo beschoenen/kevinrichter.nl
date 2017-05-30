@@ -1,0 +1,77 @@
+html {
+  background: url("../images/background.jpg") no-repeat fixed 50% 27%;
+  background-size: cover;
+}
+
+body {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 486px;
+  width: 700px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  overflow: auto;
+}
+
+.card-action, .card-image, .card-image > img {
+  border-radius: 2px !important;
+}
+
+.card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #2196F3 !important;
+}
+
+/* small size */
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    height: auto;
+    width: auto;
+  }
+
+  .right .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .left .card {
+    margin-top: .7rem;
+    margin-bottom: .5rem;
+  }
+
+  .row {
+    margin-bottom: .7rem;
+  }
+
+  .card {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* medium size */
+@media only screen and (min-width: 992px) {
+  .right .card {
+    margin: .5rem 0 1.5rem 0 !important;
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+}
+
+/* large size */
+@media only screen and (min-width: 1200px) {
+  .right .card {
+    margin: .5rem 0 1.37rem 0 !important;
+  }
+}

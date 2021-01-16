@@ -1,11 +1,12 @@
 html {
-  background: url("../images/background.jpg") no-repeat fixed 50% 27%;
+  background: url("../images/background.jpg") no-repeat fixed center;
   background-size: cover;
+  font-family: Roboto, "Helvetica Neue", serif;
 }
 
 body {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
@@ -23,8 +24,8 @@ body {
   overflow: auto;
 }
 
-.card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-  color: #2196F3 !important;
+.card, img {
+  border-radius: 0 !important;
 }
 
 /* small size */
@@ -57,7 +58,7 @@ body {
 /* medium size */
 @media only screen and (min-width: 992px) {
   .right .card {
-    margin: .5rem 0 1.5rem 0 !important;
+    margin: .5rem 0 1.5rem 0;
   }
 
   .wrapper {
@@ -68,6 +69,6 @@ body {
 /* large size */
 @media only screen and (min-width: 1200px) {
   .right .card {
-    margin: .5rem 0 1.37rem 0 !important;
+    margin: .5rem 0 1.37rem 0;
   }
 }

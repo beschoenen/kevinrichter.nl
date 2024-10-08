@@ -1,0 +1,45 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.content {
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-direction: column;
+}
+
+.title + p {
+    margin-top: -16px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    max-height: 250px;
+}
+
+.links {
+    padding: 8px;
+}
+
+.links > a + a {
+    margin-left: 16px;
+}
+
+.resume {
+    color: unset;
+    text-decoration: none;
+}
